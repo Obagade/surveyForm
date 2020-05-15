@@ -10,11 +10,19 @@ body{
     margin: 0;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
+h1 + p {
+    margin-top: 0;
+}
+
 form {
     background-color: aliceblue;
     box-shadow: 2px 5px 10px rgba(0,0,0, 0.4);
     max-width: 450px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 30px 20px;
 }
 
@@ -30,10 +38,30 @@ form {
     margin-bottom: 5px;
 }
 
-.form-control input {
+.form-control input,
+.form-control select,
+.form-control textarea
+{
     border-radius: 2px;
     border: 1px solid #777;
+    font-family: inherit;
+    font-size: 12px;
     padding: 10px;
     display: block;
     width: 100%;
+}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+button {
+    background-color: #079992;
+    width: 100%;
+    padding: 5px;
+    font-family: inherit;
+    border: 1px solid #05c46b;
+    border-radius: 2px;
+    font-size: 16;
 }
